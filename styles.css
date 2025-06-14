@@ -1,0 +1,295 @@
+   
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Circular", Arial, sans-serif;
+      }
+
+      :root {
+        --green: #1db954;
+        --black: #191414;
+        --white: #ffffff;
+        --gray: #919496;
+        --dark-gray: #222326;
+      }
+
+      body {
+        background-color: var(--black);
+        color: var(--white);
+      }
+
+      /* Navbar */
+      nav {
+        background-color: var(--black);
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+      }
+
+      .logo {
+        height: 40px;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin: 0 15px;
+      }
+
+      .nav-links a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: var(--green);
+      }
+
+      .separator {
+        color: var(--white);
+        font-size: 24px;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("https://www-growth.scdn.co/static/home/bursts.svg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 80px;
+      }
+
+      .hero h1 {
+        font-size: 104px;
+        font-weight: 900;
+        margin-bottom: 40px;
+        background: linear-gradient(to right, #1db954, #1ed760);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 1;
+      }
+
+      .hero p {
+        font-size: 18px;
+        margin-bottom: 40px;
+        max-width: 600px;
+      }
+
+      .cta-button {
+        background-color: var(--green);
+        color: var(--black);
+        border: none;
+        border-radius: 500px;
+        padding: 14px 32px;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .cta-button:hover {
+        transform: scale(1.05);
+        background-color: #1ed760;
+      }
+
+      /* Features Section */
+      .features {
+        padding: 100px 50px;
+        text-align: center;
+        background-color: var(--white);
+        color: var(--black);
+      }
+
+      .features h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+
+      .features p {
+        font-size: 18px;
+        margin-bottom: 60px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .feature-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .card {
+        background-color: var(--white);
+        border-radius: 10px;
+        padding: 30px;
+        width: 300px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+      }
+
+      .card-icon {
+        font-size: 50px;
+        color: var(--green);
+        margin-bottom: 20px;
+      }
+
+      .card h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+
+      .card p {
+        font-size: 16px;
+        color: var(--dark-gray);
+        margin-bottom: 0;
+      }
+
+      /* Footer */
+      footer {
+        background-color: var(--black);
+        padding: 80px 50px 30px;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+      }
+
+      .footer-column {
+        width: 200px;
+        margin-bottom: 30px;
+      }
+
+      .footer-column h3 {
+        color: var(--gray);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
+
+      .footer-links {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 15px;
+      }
+
+      .footer-links a {
+        color: var(--white);
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: var(--green);
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .social-icons a {
+        color: var(--white);
+        background-color: var(--dark-gray);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+      }
+
+      .social-icons a:hover {
+        background-color: var(--green);
+        color: var(--black);
+      }
+
+      .footer-bottom {
+        border-top: 1px solid var(--dark-gray);
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: var(--gray);
+        font-size: 12px;
+      }
+
+      .footer-bottom-links {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+      }
+
+      .footer-bottom-links li {
+        margin-right: 20px;
+        margin-bottom: 10px;
+      }
+
+      .footer-bottom-links a {
+        color: var(--gray);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-bottom-links a:hover {
+        color: var(--green);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        nav {
+          padding: 0 20px;
+        }
+
+        .hero h1 {
+          font-size: 60px;
+        }
+
+        .features {
+          padding: 60px 20px;
+        }
+
+        .footer-content {
+          flex-direction: column;
+        }
+
+        .footer-column {
+          width: 100%;
+        }
+      }
+    
